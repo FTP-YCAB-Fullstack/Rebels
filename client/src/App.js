@@ -6,6 +6,7 @@ import "./style.css"
 import Main from "./pages/Main";
 import PublicRouting from "./utils/PublicRouting";
 import PrivateRouting from "./utils/PrivateRouting";
+import Converter from "./pages/Converter-currency";
 import Crypto from "./pages/Crypto-currency";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <PublicRouting path="/login" exact component={Login}/>
           <PublicRouting path="/register" exact component={Register}/>
           <PrivateRouting path="/crypto" exact component={Crypto}/>
+          <PrivateRouting path="/converter"exact component={Converter}/>
           <PrivateRouting path="/main" exact component={Main}/>
         </Switch>
       </Router>
