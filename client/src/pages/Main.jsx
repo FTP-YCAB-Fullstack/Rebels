@@ -35,6 +35,9 @@ function Main() {
             <div className="flex content-between justify-between mx-32 mt-7 mb-16">
                 <div><p>Logo</p></div>
                 <div>
+                    <Link className="link" to="/converter">
+                    <button className="border-transparent text-md font-semibold mx-6">Converter</button>
+                    </Link>
                     <Link className="link" to="/Crypto">
                     <button className="border-transparent text-md font-semibold mx-6">Crypto</button>
                     </Link>
