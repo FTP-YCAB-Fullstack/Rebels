@@ -1,12 +1,15 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
+import piggy from "../assets/piggy64.png"
 
 export default function Home() {
     return (
         <div>
-            <div className="flex justify-between mx-32 mt-6">
-                <p className="font-semibold">Logo</p>
+            <div className="flex items-center justify-between mx-32 mt-6">
+                <div className='flex flex-row items-center'>
+                <img src={piggy} alt="piggy" className='bg-white-'/>
+                <p className="font-semibold flex justify-items-center py-10">Piggy</p>
+                </div>
                 <div className="flex">
                     <Link to="/login">
                         <button className="border-transparent bg-red-400 text-white w-28 mr-6   text-sm p-3 rounded-lg">Login</button>

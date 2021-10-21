@@ -3,6 +3,8 @@ import DashboardCard from '../components/DashboardCard'
 import ModalCreate from '../components/ModalCreate'
 import { useDispatch, useSelector } from 'react-redux'
 import {Link, useHistory } from "react-router-dom";
+import piggy from "../assets/piggy64.png"
+
 
 function Main() {
 
@@ -32,8 +34,11 @@ function Main() {
       
     return (
         <div className="min-h-screen">
-            <div className="flex content-between justify-between mx-32 mt-7 mb-16">
-                <div><p>Logo</p></div>
+            <div className="flex items-center content-between justify-between mx-32 mt-7 mb-16">
+                <div className='flex flex-row items-center'>
+                <img src={piggy} alt="piggy" className='bg-white-'/>
+                <p>Piggy</p>
+                </div>
                 <div>
                     <Link className="link" to="/converter">
                     <button className="border-transparent text-md font-semibold mx-6">Converter</button>

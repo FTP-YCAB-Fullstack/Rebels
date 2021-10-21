@@ -52,10 +52,7 @@ function DashboardCard({listen}) {
     return (
 
     <div>
-            <div className='pt-3 mx-32 flex flex-row justify-between'>
-                <p>Total Simpanan</p> 
-                <p>{sum}</p>
-            </div>
+          
         {data.map((elemement,index)=>{ 
             return(
                 
@@ -67,7 +64,7 @@ function DashboardCard({listen}) {
                     }}>
                         <p>{elemement.tanggal}</p>
                         <p>{elemement.tipedata}</p>
-                        <p>{elemement.nominal}</p>
+                        <p>Rp.{elemement.nominal}</p>
 
                     </div>
 
@@ -90,6 +87,13 @@ function DashboardCard({listen}) {
             
             )
         })}
+        <div className='pt-3 flex mx-32 '>
+                <div className='flex flex-row justify-between w-screen py-3 px-8 rounded-lg bg-gray-400 cursor-pointer'>
+                <p>Total Simpanan</p> 
+                <p>Rp.{sum}</p>
+                </div>
+                
+            </div>
     </div>   
      )
 }
